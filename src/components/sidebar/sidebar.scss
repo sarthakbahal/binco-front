@@ -1,0 +1,114 @@
+.sidebar{
+    
+    flex: 2;
+    border-right: 0.5px solid #ccc;
+    min-height: 100vh;
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(54, 240, 12);
+        }
+
+        
+    }
+
+    .center{
+        padding-left: 15px;
+
+        ul{
+          list-style: none;
+          margin: 0;  
+          padding: 0;
+            li{
+                display: flex;
+                align-items: center;
+                margin-top: 18px;
+                margin-bottom: 18px;
+                gap: 7px;
+                cursor: pointer;
+                padding: 5px;
+                &:hover{
+                    background-color: #60e04a;
+                }
+            }
+
+            .title{
+                font-size: 16px;
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 8px;
+                margin-top: 10px;
+            }
+
+            .icon{
+                font-size: 40px;
+                color: #d999ee;
+            }
+
+            span{
+                font-size: 16px;
+                font-weight: 700;
+                margin-left: 10px;
+                color: #4e4b4b;
+            }
+        }
+    }
+
+    .bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        
+
+        .pfp{
+            border: #333 1px solid;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pfp img{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .pfp:hover{
+            cursor: pointer;
+            
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+        
+        
+
+        .name{
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 2px;
+            font-weight: 700;
+        }
+
+        .email{
+                font-size: 13px;
+                color: #666;
+        }
+    }
+
+
+}
