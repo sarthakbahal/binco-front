@@ -1,11 +1,13 @@
 .navbar{
     height:55px;
     width:100%;
-    background-color:#333;
+    background-color:#F5F5DC;
     display:flex;
     align-items: center;
     font-size: 15px;
-    color:antiquewhite;
+    margin:8px 0px;
+    border-radius: 15px;
+    
 
     .wrapper{
         display: flex;
@@ -25,6 +27,8 @@
                 display: flex;
                 align-items: center;
                 gap: 5px;
+                color: #8fb996;
+                cursor: pointer;
             }
         }
 
@@ -36,12 +40,14 @@
             padding: 4px;
             width: 400px;
             border-radius: 5px;
+            border: 1px solid #8fb996;
 
-            background-color: antiquewhite;
+            background-color: #8fb996;
 
             .icon{
                 filter: invert(1);
                 padding-left: 5px;
+                cursor: pointer;
             }
             
         }
@@ -54,11 +60,22 @@
             padding-left: 10px;
             font-size: 15px;
             color: #333;
-            background-color: antiquewhite;
+            background-color: #8fb996;
 
             &:focus{
                 outline: none;
             }
+        }
+
+        .hamburger{
+            color: #8fb996;
+            border: 4px solid #8fb996;
+            padding: 5px;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            
+            cursor: pointer;
         }
 
     }
