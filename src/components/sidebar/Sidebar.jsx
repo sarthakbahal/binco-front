@@ -47,7 +47,15 @@ const Sidebar = () => {
             </ul>
         </div>
         <div className="bottom">
-            <div className="pfp">pfp</div>
+            <div className="pfp">
+                <img 
+                    src="https://th.bing.com/th/id/OIP.Os3dloCTc-JUqOagtZOXVAHaHr?w=178&h=185&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"
+                    alt="Profile"
+                    className='avatar'
+                
+                
+                />
+            </div>
             <div className="info">
                 <span className="name">John Doe</span>
                 <span className="email">jhondoe@gmail.com</span>
