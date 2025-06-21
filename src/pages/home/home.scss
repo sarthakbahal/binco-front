@@ -6,12 +6,17 @@
         
       flex: 10;
 
-      .widgets{
+      .widgets, .charts{
          display: flex;
+         flex-wrap: wrap;
          gap: 30px;
          flex-direction: row;
          padding: 20px;
          margin: 10px;
+      }
+
+      .charts{
+         padding-top: 15px;
       }
    }
 }
