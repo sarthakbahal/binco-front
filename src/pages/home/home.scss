@@ -1,10 +1,12 @@
 .home{
    display: flex;
    background: linear-gradient(#fefae0, #60e04a);
+   max-height: 100vh;
 
    .homecontainer{
         
       flex: 10;
+      overflow-y: scroll;
 
       .widgets, .charts{
          display: flex;
