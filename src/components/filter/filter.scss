@@ -1,0 +1,38 @@
+.filters{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .category{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        justify-content: center;
+        padding: 10px;
+        background-color: #fefae0;
+        border-radius: 5px;
+        height: 35px;
+        padding-bottom: 15px;
+
+        .icon{
+            margin-top: 10px;
+            
+        }
+        
+        
+    
+    }
+
+    .sort{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        justify-content: center;
+        padding: 10px;
+        background-color: #fefae0;
+        border-radius: 5px;
+        height: 35px;
+        padding-bottom: 15px;
+    }
+    
+}

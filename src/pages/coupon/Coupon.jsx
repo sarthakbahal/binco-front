@@ -4,7 +4,8 @@ import Sidebar from '../../components/sidebar/Sidebar'
 import Navbar from '../../components/navbar/Navbar'
 import Coinscounter from '../../components/coinscounter/Coinscounter'
 import SearchIcon from '@mui/icons-material/Search';
-import MultipleSelectPlaceholder from '../../components/filter/Filter'
+
+import SelectLabels from '../../components/filter/Filter'
 
 const Coupon = () => {
   return (
@@ -22,13 +23,11 @@ const Coupon = () => {
             <SearchIcon className='icon' />
             <input type="text" placeholder="Search..." />
           </div>
-          <div className="menu">
-            <MultipleSelectPlaceholder />
+          <div className="filter">
+            <SelectLabels />
             
           </div>
-          <div className="filter">
-
-          </div>
+          
 
 
         </div>
