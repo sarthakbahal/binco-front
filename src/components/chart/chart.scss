@@ -1,4 +1,4 @@
-.chart{
+.chart {
     flex: 6;
     box-shadow: 0px 11px 22px -4px rgba(0, 0, 0, 0.62);
     -webkit-box-shadow: 0px 11px 22px -4px rgba(0, 0, 0, 0.62);
@@ -7,28 +7,28 @@
 
     max-height: fit-content;
 
-    
+
 
     padding: 30px;
 
-    .top{
-        display:flex;
+    .top {
+        display: flex;
         gap: 20px;
 
-        .icon{
+        .icon {
             font-size: 40px;
             color: #4a4a4a;
             color: rgb(108, 175, 8);
 
         }
 
-        .title{
+        .title {
             font-size: 25px;
             font-weight: 700;
             color: #434141;
         }
 
-        .desc{
+        .desc {
             font-size: 15px;
             color: #4a4a4a;
             margin-top: 5px;
@@ -37,7 +37,7 @@
 
     }
 
-    .graph{
+    .graph {
         background-color: #F1F3CE;
         margin-top: 20px;
         padding: 20px;
@@ -45,6 +45,9 @@
         padding-bottom: 30px;
         border-radius: 10px;
         box-shadow: 0px 11px 22px -4px rgba(0, 0, 0, 0.62);
+        -webkit-box-shadow: 0px 11px 22px -4px rgba(0, 0, 0, 0.62);
+        -moz-box-shadow: 0px 11px 22px -4px rgba(0, 0, 0, 0.62);
+
     }
 
 

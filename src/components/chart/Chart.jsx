@@ -2,7 +2,7 @@ import React from 'react'
 import './chart.scss'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import { TrendingUp } from '@mui/icons-material';
+
 
 const data = [
     { month: 'Jan' , recycled: 2},
@@ -28,7 +28,7 @@ const Chart = () => {
         <div className='chart'>
             
             <div className="top">
-                <TrendingUp className='icon' />
+                <TrendingUpIcon className='icon' />
                 <div className="info">
 
                     <h3 className="title">Your Recycling Activity</h3>
