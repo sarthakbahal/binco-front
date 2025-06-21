@@ -1,0 +1,8 @@
+.coupon-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    align-items: stretch;
+    width: 100%;
+    padding: 20px 0;
+}

@@ -1,0 +1,120 @@
+.couponblock {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 11px 22px -4px rgba(0, 0, 0, 0.62);
+    height: 450px; // Fixed height for all cards
+    position: relative; // For absolute positioning of button
+    box-sizing: border-box;
+    max-width: 350px;
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: 180px; // Reduced slightly
+        border-radius: 10px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        
+        .left {
+            flex: 3;
+            padding-right: 10px;
+            
+            h3 {
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 5px;
+                // Prevent long titles from breaking layout
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+            p {
+                font-size: 16px;
+                color: #555;
+                margin-bottom: 5px;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            
+            .category {
+                font-size: 14px;
+                font-weight: 700;
+                background-color: rgb(181, 234, 181);
+                padding: 5px 10px;
+                border-radius: 50px;
+                text-align: center;
+                white-space: nowrap;
+            }
+
+            .coins {
+                font-size: 18px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                .icon {
+                    font-size: 24px;
+                    color: #f0c040;
+                }
+            }
+        }
+    }
+
+    .Rating {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        
+        .rating {
+            font-size: 16px;
+            font-weight: 800;
+            border-radius: 50px;
+            background-color: rgb(181, 234, 181);
+            display: inline-block;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+        }
+
+        .expiry {
+            font-size: 14px;
+            font-weight: 600;
+            color: #e70d0d;
+        }
+    }
+
+    .redeem {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        background-color: #f0c040;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 12px 0;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        text-align: center;
+
+        &:hover {
+            background-color: #d9b030;
+        }
+    }
+}
