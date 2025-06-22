@@ -122,4 +122,37 @@
             background-color: #d9b030;
         }
     }
+
+
+    @media screen and (max-width: 768px) {
+        
+        .center{
+            
+            margin: 0px;
+            display: flex;
+            
+            padding: 10px;
+            justify-content: space-between;
+
+            .left {
+                text-align: center;
+                padding-right: 0;
+                order: 1;
+            }
+
+            .right {
+                margin-right: 0;
+                text-align: center;
+                order: 2;
+            }
+        }
+
+        .redeem{
+           
+                order: 3;
+            
+        }
+
+        
+    }
 }

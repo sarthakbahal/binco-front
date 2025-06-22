@@ -20,7 +20,7 @@ const Coupon = () => {
           <p>Redeem your bincoins for amazing deals !!!</p>
           <Coinscounter />
         </div>
-        <div className="center">
+        <div className="centersection">
           <div className="searchsection">
             <SearchIcon className='icon' />
             <input type="text" placeholder="Search..." />
