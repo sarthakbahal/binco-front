@@ -23,7 +23,7 @@ const Widget = ({type}) => {
     case "streak":
       data = {
         title: "Streak",
-        counter: "5" + " days",
+        counter: "5 days",
         subtext: "Current Streak",
         icon: <WhatshotIcon className="icon" />,
         color: "#ff7d00"

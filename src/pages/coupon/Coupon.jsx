@@ -6,7 +6,7 @@ import Coinscounter from '../../components/coinscounter/Coinscounter'
 import SearchIcon from '@mui/icons-material/Search';
 
 import SelectLabels from '../../components/filter/Filter'
-import Couponblock from '../../components/couponBlock/Couponblock'
+
 import CouponList from '../../components/couponBlock/CouponList'
 
 const Coupon = () => {
