@@ -6,11 +6,23 @@ import ReceiptIcon from '@mui/icons-material/Receipt';
 import RestoreIcon from '@mui/icons-material/Restore';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-
+import CancelIcon from '@mui/icons-material/Cancel';
 
 const Sidebar = () => {
+  
+    const closeSidebar = () => {
+        document.querySelector('.sidebar').classList.remove('open');
+    }
+  
+  
+  
   return (
     <div className='sidebar'>
+       
+       <span className="close" onClick={closeSidebar}>
+              <CancelIcon className='icon' />
+       </span>
+       
         <div className="top">
             <span className="logo">BinCo</span>
         </div>

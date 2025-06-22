@@ -21,4 +21,23 @@
          padding-top: 15px;
       }
    }
+
+   @media screen and (max-width: 768px) {
+        flex-direction: column;
+        
+        .homecontainer {
+            .widgets {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .charts {
+                flex-direction: column;
+                gap: 25px;
+                margin-right: 70px;
+            }
+        }
+   }
+
+
 }

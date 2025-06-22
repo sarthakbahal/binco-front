@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navbar.scss'
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
@@ -7,18 +7,32 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 
+
 const Navbar = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    document.querySelector('.sidebar').classList.toggle('open');
+  }
+
+
+
   return (
     <div className='navbar'>
+
+
+
       <div className="wrapper">
 
-        <div className="hamburger">
+        <div className="hamburger" onClick={toggleMenu}>
           <MenuOpenIcon className='icon' />
         </div>
 
         <div className="search">
           <SearchIcon className='icon' />
-          <input type="text" placeholder="Search..."  />
+          <input type="text" placeholder="Search..." />
         </div>
 
         <div className="items">
@@ -32,7 +46,7 @@ const Navbar = () => {
             <TollIcon className='icon' />
             846
           </div>
-          
+
         </div>
 
       </div>

@@ -79,4 +79,43 @@
         }
 
     }
+
+
+    @media screen and (max-width: 768px) {
+        .wrapper {
+            .search {
+                width: 60%;
+            }
+            
+            .items {
+                gap: 10px;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .wrapper {
+            .search {
+                width: 70%;
+                margin-top: 10px;
+                order: 3;
+                display: none;
+                
+            }
+
+            .hamburger{
+                margin-top: 10px;
+                order: 1;
+            }
+            
+            .items {
+                order: 2;
+                width: 100%;
+                justify-content: flex-end;
+                margin-right: 12px;
+            }
+            
+            
+        }
+    }
 }

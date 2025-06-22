@@ -51,4 +51,15 @@
     }
 
 
+    @media screen and (max-width: 768px) {
+        flex: none;
+        width: 100%;
+        
+        .graph {
+            padding: 10px;
+
+        }
+    }
+
+
 }
