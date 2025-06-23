@@ -2,6 +2,8 @@ import React from 'react'
 import './owned.scss'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Navbar from '../../components/navbar/Navbar'
+import SearchIcon from '@mui/icons-material/Search';
+import {OwnedCouponList} from '../../components/couponBlock/CouponList'
 
 const Owned = () => {
   return (
@@ -35,10 +37,10 @@ const Owned = () => {
 
         <div className="searchsec">
           <div className="search">
-            <input type="text" placeholder='Search by coupon name' />
-            <button>Search</button>
+            <SearchIcon className='icon' />
+            <input type="text" placeholder="Search..." />
           </div>
-          <div className="filter">
+          <div className="sorter">
             <select name="filter" id="filter">
               <option value="">All coupons</option>
               <option value="active">Active</option>
@@ -46,6 +48,10 @@ const Owned = () => {
               <option value="redeemed">Redeemed</option>
             </select>
           </div>
+        </div>
+
+        <div className="bottom">
+          <OwnedCouponList />
         </div>
 
       </div>

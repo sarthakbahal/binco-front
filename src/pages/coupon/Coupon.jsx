@@ -7,7 +7,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 import SelectLabels from '../../components/filter/Filter'
 
-import CouponList from '../../components/couponBlock/CouponList'
+import {CouponList} from '../../components/couponBlock/CouponList'
 
 const Coupon = () => {
   return (

@@ -2,6 +2,7 @@
     display: flex;
     background: linear-gradient(#fefae0, #60e04a);
     max-height: 100vh;
+    
 
     .ownedcontainer{
         flex:10;
@@ -38,6 +39,77 @@
             }
         }
 
+
+        .searchsec{
+            display: flex;
+            align-items: center;
+            background-color: #fefae0;
+            margin: 20px 20px;
+            height: 20px;
+            justify-content: space-between;
+            padding: 20px;
+            
+
+            .search{
+                display: flex;
+                align-items: center;
+                width: 50%;
+                
+                input{
+                    width: 90%;
+                    height: 20px;
+                    border-radius: 5px;
+                    border: none;
+                    padding-left: 10px;
+                    font-size: 18px;
+                    color: #333;
+                    background: transparent;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+            }
+
+            .sorter{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                
+
+                select{
+                    width: 150px;
+                    height: 30px;
+                    border-radius: 5px;
+                    border: none;
+                    padding-left: 10px;
+                    font-size: 18px;
+                    color: #333;
+                    background: transparent;
+                    cursor: pointer;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    option{
+                        cursor: pointer;
+                        color: #333;
+                    }
+                }
+
+                
+            }
+        }
+
+        .bottom{
+            
+            
+            
+        }
+
     }
 
 
@@ -51,12 +123,21 @@
             .status{
                 
                 align-items: center;
+                padding: 0px;
+                border-radius: 10px;
 
 
                 .box{
                     width: 50%;
-                    margin-bottom: 10px;
+                    margin-bottom: 0px;
                 }
+            }
+
+            .searchsec{
+                border-radius: 10px;
+                margin-top: 10px;
+                margin-left: 0px;
+                margin-right: 0px;
             }
         }
         
