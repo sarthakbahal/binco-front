@@ -6,6 +6,15 @@ import SearchIcon from '@mui/icons-material/Search';
 import {OwnedCouponList} from '../../components/couponBlock/CouponList'
 
 const Owned = () => {
+  
+  const [statusFilter, setStatusFilter] = React.useState('');
+  
+  const handleStatusFilterChange = (event) => {
+    setStatusFilter(event.target.value);
+  };
+  
+  
+  
   return (
     <div className='owned'>
       <Sidebar />
@@ -41,7 +50,12 @@ const Owned = () => {
             <input type="text" placeholder="Search..." />
           </div>
           <div className="sorter">
-            <select name="filter" id="filter">
+            <select 
+              name="filter" 
+              id="filter"
+              value={statusFilter}
+              onChange={handleStatusFilterChange}
+            >
               <option value="">All coupons</option>
               <option value="active">Active</option>
               <option value="expired">Expired</option>
@@ -51,7 +65,7 @@ const Owned = () => {
         </div>
 
         <div className="bottom">
-          <OwnedCouponList />
+          <OwnedCouponList statusFilter={statusFilter} />
         </div>
 
       </div>
