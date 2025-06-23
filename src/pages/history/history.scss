@@ -1,7 +1,7 @@
 .history{
     display: flex;
     background: linear-gradient(#fefae0, #60e04a);
-    max-height: 100vh;
+    min-height: 100vh;
 
     .historycontainer{
         flex:10;
@@ -101,6 +101,19 @@
                     }
                 }
                 
+            }
+        }
+
+        .history-content{
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .bottom{
+                display:flex;
+                gap: 10px;
+                flex-direction: column;
             }
         }
 

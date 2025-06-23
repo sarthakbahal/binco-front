@@ -3,10 +3,19 @@ import './history.scss'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Navbar from '../../components/navbar/Navbar'
 import SearchIcon from '@mui/icons-material/Search';
-import Featured from '../../components/featured/Featured'
-
+import TransactionBlock from '../../components/transblock/Transactionblock';
 
 const History = () => {
+    const transactions = [
+        { type: "recycling", description: "Plastic bottles recycled", amount: "5 kg", date: "2023-10-01" },
+        { type: "purchase", description: "New reusable bag", amount: "10.00", date: "2023-10-02" },
+        { type: "recycling", description: "Glass bottles recycled", amount: "3 kg", date: "2023-10-03" },
+        { type: "purchase", description: "Eco-friendly detergent", amount: "15.00", date: "2023-10-04" },
+        { type: "recycling", description: "Cardboard recycled", amount: "10 kg", date: "2023-10-05" },
+        { type: "purchase", description: "Organic produce", amount: "25.00", date: "2023-10-06" },
+    ];
+
+
     return (
         <div className='history'>
             <Sidebar />
@@ -42,18 +51,18 @@ const History = () => {
                         <select
                             name="filter"
                             id="filter"
-                            
+
                         >
                             <option value="">All Types</option>
                             <option value="active">Earnings</option>
                             <option value="expired">Purchases</option>
-                            
+
                         </select>
 
                         <select
                             name="time"
                             id="time"
-                            
+
                         >
                             <option value="">All Time</option>
                             <option value="today">Today</option>
@@ -67,7 +76,15 @@ const History = () => {
                 </div>
 
                 <div className="history-content">
-                    <Featured />
+                    <div className="top">
+                        <h2 className='title'>Recent Transactions</h2>
+                        <p>Your latest recycling and purchase activity</p>
+                    </div>
+                    <div className="bottom">
+                        {transactions.map((transaction, index) => (
+                            <TransactionBlock key={index} transaction={transaction} />
+                        ))}
+                    </div>
                 </div>
 
             </div>
