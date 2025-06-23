@@ -5,6 +5,7 @@ import Owned from "./pages/owned/Owned";
 import Landing from "./pages/landing/Landing";
 import { BrowserRouter , Routes , Route }  from "react-router-dom";
 import About from "./pages/about/About";
+import History from "./pages/history/History";
 
 
 
@@ -22,6 +23,7 @@ function App() {
             <Route path=":userId" element={<Home />} />
             <Route path="owned" element={<Owned />} />
             <Route path="coupon" element={<Coupon />} />
+            <Route path="history" element={<History />} />
 
           </Route>
           
