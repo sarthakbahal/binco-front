@@ -34,7 +34,7 @@ const Ownedcoupon = ({ownedcoupons}) => {
                         <h3>{ownedcoupons.title}</h3>
                         <p>{ownedcoupons.restaurant}</p>
                     </div>
-                    <span className="status" style={{color: getStatusColor()}}>{ownedcoupons.status}</span>
+                    <span className="status" style={{color: getStatusColor()}}>{ownedcoupons.status.toUpperCase()}</span>
                 </div>
 
                 <div className="highs">
