@@ -22,7 +22,7 @@ function App() {
             <Route path="about" element={<About />} />
           </Route>
           <Route path="user">
-            <Route path=":userId" element={<Home />} />
+            <Route path="dashboard" element={<Home />} />
             <Route path="owned" element={<Owned />} />
             <Route path="coupon" element={<Coupon />} />
             <Route path="history" element={<History />} />
