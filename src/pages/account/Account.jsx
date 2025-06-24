@@ -18,7 +18,27 @@ const Account = () => {
             
             <div className="acc">
              <EditProfileBox />
-              
+
+              <div className="accstats">
+                <h3>Account Statistics :</h3>
+                <div className="since">
+                  <p>Account created on:</p>
+                  <span>01/01/2023</span>
+                </div>
+                <div className="total">
+                  <p>Total recycled:</p>
+                  <span>150</span>
+                </div>
+                <div className="earned">
+                  <p>Total binCoins earned:</p>
+                  <span>300</span>
+                </div>
+                <div className="streak">
+                  <p>Current streak:</p>
+                  <span>5 days</span>
+                </div>
+
+              </div>
 
             </div>
             
