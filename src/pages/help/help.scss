@@ -1,0 +1,62 @@
+.help{
+    display: flex;
+   background: linear-gradient(#fefae0, #60e04a);
+   min-height: 100vh;
+
+   .helpcont{
+        flex:10;
+        overflow-y: scroll;
+        padding: 10px;
+
+        .status{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 30px;
+            gap: 15px;
+            border-radius: 50px;
+
+            .box{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+                width: 90%;
+                height: 100px;
+                background-color: #fefae0;
+                padding: 10px;
+                border-radius: 10px;
+                
+
+                h2{
+                    font-weight: 800;
+                    
+                }
+
+                p{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+
+            }
+            
+        }
+
+        .qna{
+            
+            margin-top: 50px;
+            padding: 8px;
+            
+            .heads{
+                display: flex;
+                margin-bottom: 20px;
+                gap: 10px;
+            }
+
+            
+        }
+
+
+   }
+}
