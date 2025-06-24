@@ -1,0 +1,57 @@
+.account{
+   display: flex;
+   background: linear-gradient(#fefae0, #60e04a);
+   min-height: 100vh;
+
+   .account__container{
+        flex: 10;
+        overflow-y: scroll;
+        
+        .heading{
+           
+            font-weight: bold;
+            padding: 10px;
+            
+        }
+
+        .acc{
+            
+            display: flex;
+            
+            margin: 30px auto;
+        }
+       
+   }
+
+
+   @media screen and (max-width: 768px) {
+        .account__container{
+            flex: 1;
+        }
+        
+        .heading{
+            font-size: 1.2rem;
+        }
+
+        .acc{
+            margin-top: 40px;
+            width: 90%;
+            
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .account__container{
+            flex: 1;
+        }
+        
+        .heading{
+            font-size: 1rem;
+        }
+
+        .acc{
+            margin-top: 15px;
+        }
+      
+   }
+}
