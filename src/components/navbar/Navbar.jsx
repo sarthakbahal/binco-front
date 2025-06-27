@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './navbar.scss'
+import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import TollIcon from '@mui/icons-material/Toll';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
@@ -27,6 +28,11 @@ const Navbar = () => {
 
         <div className="hamburger" onClick={toggleMenu}>
           <MenuOpenIcon className='icon' />
+        </div>
+
+        <div className="search">
+          <SearchIcon className='icon' />
+          <input type="text" placeholder="Search..." />
         </div>
 
         <div className="items">

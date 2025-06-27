@@ -22,18 +22,18 @@ const Help = () => {
 
                 <div className="status">
                     <div className="box">
-                        <h2>Bin Locater :</h2>
+                        <h2>Bin Locater:</h2>
                         <Link href="#" underline="hover" style={{ fontSize: '1.2rem', color: '#1976d2' }}>
                             {'Find a bin near you'}
                         </Link>
 
                     </div>
                     <div className="box">
-                        <h2>Email Support :</h2>
+                        <h2>Email Support:</h2>
                         <p>bingo@mails.in</p>
                     </div>
                     <div className="box">
-                        <h2>Phone Support :</h2>
+                        <h2>Phone Support:</h2>
                         <p>+910000000000</p>
                     </div>
 
